@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+
+// Nav menu list for links
 function Navigation(){
     return (
     <ul className="nav-ul">
@@ -55,9 +57,15 @@ const Navbar = () => {
                         </nav>
                     </div>
                 </div>
+                {/* Animatation for Nav */}
                 {isOpen &&(
-                <motion.div className="block overflow-hidden text-center
-                sm:hidden">
+                <motion.div 
+                className="block overflow-hidden text-center sm:hidden" 
+                initial={{opacity: 0, x: -10}}
+                animate={{opacity: 1, x: 0}}
+                style={{maxHeight: "100vh"}}
+                transition={{duration: 1}}
+                >
                     <nav className="pb-5">
                         <Navigation />
                     </nav>
