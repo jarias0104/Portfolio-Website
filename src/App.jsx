@@ -9,6 +9,12 @@ const App = () => {
       <Navbar/>
       {/* hero */}
       <Hero/>
+      <section className="min-h-screen" />
+      <section className="min-h-screen" />
+      <section className="min-h-screen" />
+      <section className="min-h-screen" />
+      <section className="min-h-screen" />
+      <section className="min-h-screen" />
       {/* about */}
       {/* projects */}
       {/* experience */}
