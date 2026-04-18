@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "../components/Card";
 import { useRef } from "react";
+import { Globe } from "../components/globe";
+import CopyEmailButton from "../components/CopyEmailButton";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
     const grid2Container = useRef();
@@ -65,32 +68,56 @@ const About = () => {
                         />
                         <Card 
                             style={{ rotate: "30deg", top: "70%", left: "70%"}}
-                            image="../public/assets/logos/csharp-pink.png"
+                            image="/assets/logos/csharp-pink.png"
                             containerRef={grid2Container}
                         />
                         <Card 
                             style={{ rotate: "-45deg", top: "70%", left: "25%"}}
-                            image="../public/assets/logos/dotnet-pink.png"
+                            image="/assets/logos/dotnet-pink.png"
                             containerRef={grid2Container}
                         />
                         <Card 
                             style={{ rotate: "-45deg", top: "5%", left: "10%"}}
-                            image="../public/assets/logos/blazor-pink.png"
+                            image="/assets/logos/blazor-pink.png"
                             containerRef={grid2Container}
                         />
                     </div>
                 </div>
                 {/* grid 3*/}
                 <div className="grid-black-color grid-3">
-
+                    <div className="z-10 w-[50%]">
+                        <p className="headext">Time Zone</p>
+                        <p className="subtext">
+                            I'm based in the Mars, and open to remote work worldwide
+                        </p>
+                    </div>
+                    <figure className="absolute left-[30%] top-[10%]">
+                        <Globe />
+                    </figure>
                 </div>
                 {/* grid 4*/}
                 <div className="grid-special-color grid-4">
-
+                    <div className="flex flex-col items-center
+                    justify-center gap-4 size-full">
+                        <p className="text-center headtext">
+                            Do you want to start a project together?
+                        </p>
+                        <CopyEmailButton />
+                    </div>
                 </div>
                 {/* grid 5*/}
                 <div className="grid-default-color grid-5">
-
+                    <div className="z-10 w-[50%]">
+                        <p className="headtext">Tech Stack</p>
+                        <p className="subtext">I specialize in a variety of languages, frameworks,
+                            and tools that
+                            allow me to build robust and scalable applications
+                        </p>
+                    </div>
+                    <div className="absolute inset-y-0 md:inset-y-9 w-full
+                    h-full inset-s-[50%] md:scale-125">
+                        <Frameworks />
+                    </div>
                 </div>
             </div>
         </section>
