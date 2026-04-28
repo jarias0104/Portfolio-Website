@@ -5,7 +5,6 @@ export function Frameworks() {
   const skills = [
     "github",
     "microsoftsqlserver",
-    "cplusplus",
     "csharp",
     "css3",
     "dotnet",
@@ -13,12 +12,13 @@ export function Frameworks() {
     "git",
     "html5",
     "javascript",
-    "microsoft",
     "react",
     "sqlite",
     "tailwindcss",
     "visualstudiocode",
-    "wordpress",
+    "python",
+    "unreal-engine",
+    "php",
   ];
   return (
     <div className="relative flex h-60 w-full flex-col items-center justify-center">

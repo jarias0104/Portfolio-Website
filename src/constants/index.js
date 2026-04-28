@@ -1,18 +1,18 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "SounderX",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "Music player app that displays a list of songs, allows the user to create a playlist and name it, and an interactive variety of controllers",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Developed a desktop media player using C# and .NET with playlist creation and management features.",
+      "Implemented audio playback controls including play, pause, skip, and volume handling.",
+      "Designed an interactive user interface focused on usability and smooth navigation.",
+      "Applied object-oriented programming principles to manage application logic and state.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/music-app.png",
     tags: [
       {
         id: 1,
@@ -24,28 +24,19 @@ export const myProjects = [
         name: ".Net",
         path: "/assets/logos/dotnet.svg",
       },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "Unreal Engine Game",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A psychological exploration through shifting forest environments where the boundary between tranquility and survival thins with every level. What starts as a peaceful search for spiritual artifacts quickly evolves into a high-stakes escape as the player is hunted by a sentient Guardian in a world where time and health are your only currency.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Multi-Stage Progression: Navigate through three distinct levels, transitioning from a calm daylight forest to a hazardous night-time 'Final Boss' environment.",
+      "Dynamic AI Systems: Face off against a thinking NPC that utilizes advanced AI Perception to sense your presence and a Behavior Tree to hunt you down.",
+      "Survival Mechanics: Manage a real-time health system while avoiding environmental hazards like poisonous bushes that threaten to end your journey.",
+      "Objective-Based Gameplay: Race against a dwindling timer to find five hidden objects in each level before the forest claims its prize.",
+      "Immersive Visuals: Experience a unique cartoon-animated aesthetic featuring Japanese shrines, spiritual assets, and atmospheric lighting.",
     ],
     href: "",
     logo: "",
@@ -53,36 +44,18 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Unreal Engine",
+        path: "/assets/logos/unreal-engine.svg",
       },
     ],
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Coming Soon",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "Coming Soon",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Coming Soon",
     ],
     href: "",
     logo: "",
@@ -112,14 +85,11 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Coming Soon",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "Coming Soon",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Coming Soon",
     ],
     href: "",
     logo: "",
@@ -149,14 +119,11 @@ export const myProjects = [
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "Coming Soon",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "Coming Soon",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Coming Soon",
     ],
     href: "",
     logo: "",
@@ -186,14 +153,11 @@ export const myProjects = [
   },
   {
     id: 6,
-    title: "Online Learning Platform",
+    title: "Coming Soon",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "Coming Soon",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      "Coming Soon",
     ],
     href: "",
     logo: "",
@@ -242,7 +206,8 @@ export const experiences = [
     job: "Montessori English Teacher",
     date: "2024",
     contents: [
-      "Complete later...",
+    "Taught English to children in a Montessori environment, adapting lessons to different learning styles.",
+    "Developed strong communication, patience, and problem-solving skills in a dynamic classroom setting.",
     ],
   },
   {
