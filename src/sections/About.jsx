@@ -68,17 +68,17 @@ const About = () => {
                         />
                         <Card 
                             style={{ rotate: "30deg", top: "70%", left: "70%"}}
-                            image="/assets/logos/csharp-pink.png"
+                            image="/assets/logos/python.svg"
                             containerRef={grid2Container}
                         />
                         <Card 
                             style={{ rotate: "-45deg", top: "70%", left: "25%"}}
-                            image="/assets/logos/dotnet-pink.png"
+                            image="/assets/logos/react.svg"
                             containerRef={grid2Container}
                         />
                         <Card 
                             style={{ rotate: "-45deg", top: "5%", left: "10%"}}
-                            image="/assets/logos/blazor-pink.png"
+                            image="/assets/logos/visualstudiocode.svg"
                             containerRef={grid2Container}
                         />
                     </div>
@@ -96,7 +96,7 @@ const About = () => {
                     </figure>
                 </div>
                 {/* grid 4*/}
-                <div className="grid-special-color grid-4">
+                <div className="grid-4 bg-blue-950 text-white p-4 rounded-lg">
                     <div className="flex flex-col items-center
                     justify-center gap-4 size-full">
                         <p className="text-center headtext">
@@ -109,9 +109,8 @@ const About = () => {
                 <div className="grid-default-color grid-5">
                     <div className="z-10 w-[50%]">
                         <p className="headtext">Tech Stack</p>
-                        <p className="subtext">I specialize in a variety of languages, frameworks,
-                            and tools that
-                            allow me to build robust and scalable applications
+                        <p className="subtext">I work with a diverse set of programming languages, 
+                            frameworks, and tools that enable me to develop reliable, efficient, and scalable applications.
                         </p>
                     </div>
                     <div className="absolute inset-y-0 md:inset-y-9 w-full

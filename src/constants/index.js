@@ -10,7 +10,7 @@ export const myProjects = [
       "Designed an interactive user interface focused on usability and smooth navigation.",
       "Applied object-oriented programming principles to manage application logic and state.",
     ],
-    href: "",
+    href: "https://github.com/jarias0104/SounderX",
     logo: "",
     image: "/assets/projects/music-app.png",
     tags: [
@@ -40,7 +40,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/unreal-game.png",
     tags: [
       {
         id: 1,

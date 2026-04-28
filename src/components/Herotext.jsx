@@ -33,7 +33,7 @@ const variants = {
                     initial="hidden"
                     animate="visible"
                     transition={{delay: 1.2}}>
-                        A Developer <br />Dedicated to Crafting
+                        A Developer <br />Eager to learn and craft
                     </motion.p>
                     <motion.div
                     variants={variants}

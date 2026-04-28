@@ -1,6 +1,5 @@
 import { OrbitingCircles } from "./OrbitingCircles";
 
-{/* TODO: add svg python, UE, php, AWS */}
 export function Frameworks() {
   const skills = [
     "github",
