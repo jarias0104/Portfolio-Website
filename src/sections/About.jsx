@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
 import { useRef } from "react";
-import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
 
@@ -25,9 +24,10 @@ const About = () => {
                     <div className="z-10">
                         <p className="headtext">Hi, I'm Jeshua Arias</p>
                         <p className="subtext">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-                            blanditiis fugit libero in repellendus reprehenderit suscipit,
-                            dolores consequatur dolore mollitia id cum enim labore nostrum beatae accusamus earum aut expedita.
+                            I'm a software developer focused on building modern, scalable, and user-friendly applications. 
+                            I enjoy working with technologies like JavaScript, React, Python, SQL, and backend tools to create projects that combine functionality with clean design. 
+                            Passionate about continuous learning and problem-solving, I'm always looking for new ways to improve my skills and turn ideas into impactful digital experiences.
+                            Almost forgot but I also like making beats as hobbie :b.
                         </p>
                     </div>
                     <div className="absolute inset-x-0 pointer-events-none
@@ -84,16 +84,17 @@ const About = () => {
                     </div>
                 </div>
                 {/* grid 3*/}
-                <div className="grid-black-color grid-3">
-                    <div className="z-10 w-[50%]">
+                <div className="grid-default-color  grid-3">
+                    <div className="z-10 w-\[50\%\]">
                         <p className="headext">Time Zone</p>
                         <p className="subtext">
-                            I'm based in the Mars, and open to remote work worldwide
+                            Currently based in planet Earth, and open to remote work worldwide
                         </p>
+                        <img 
+                            src="assets/sonic.png"
+                            className="w-full h-auto max-h-50 object-contain drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]"
+                        />
                     </div>
-                    <figure className="absolute left-[30%] top-[10%]">
-                        <Globe />
-                    </figure>
                 </div>
                 {/* grid 4*/}
                 <div className="grid-4 bg-blue-950 text-white p-4 rounded-lg">
