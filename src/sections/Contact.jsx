@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Alert from "../components/Alert";
+import { Particles } from "../components/Particles";
 
 const Contact = () => {
     const [formData, setFormData] = useState(
@@ -10,11 +12,21 @@ const Contact = () => {
         },
     );
     const [isLoading, setIsLoading] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertType, setAlertType] = useState("success");
+    const [alertMessage, setAlertMessage] = useState("")
     // handles change on input field
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value })
     };
 
+    const showAlertMesssage = (type, message) => {
+            setAlertType(type);
+            setAlertMessage(message)
+            setShowAlert(true);
+            setTimeout(() => { 
+            }, 5000);
+    }
     // async functtion, handles the submit when send button is clicked and try catch for any error
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -33,16 +45,25 @@ const Contact = () => {
                 "oYU2LaubNZOMFE2SD"
             );  
             setIsLoading(false);
-            alert("success");
+            setFormData({name: "", email: "", message: ""});
+            showAlertMesssage("Success", "Your message has been sent");
         } catch (error) {
             setIsLoading(false);
             console.log("EmailJS Error", error);
-            alert("Failed to send message. Please try again");
+            showAlertMesssage("Error", "Something went wrong")      
         }
         
     };
     return (
             <section className="relative flex items-center c-space section-spacing">
+                <Particles 
+                    className="absolute inset-0 -z-50"
+                    quantity={100}
+                    ease={80}
+                    color={"#ffffff"}
+                    refresh
+                />
+                {showAlert && <Alert type={alertType} text={alertMessage} />}
                 <div className="flex flex-col items-center justify-center max-w-md 
                     p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
                     <div>
