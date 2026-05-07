@@ -102,15 +102,14 @@ const About = () => {
                     </div>
                 </div>
                 {/* grid 5*/}
-                <div className="grid-default-color grid-5">
-                    <div className="z-10 w-[50%]">
+                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-\[400px\] md:min-h-full">
+                    <div className="z-10 md:w-[50%]">
                         <p className="headtext">Tech Stack</p>
                         <p className="subtext">I work with a diverse set of programming languages, 
                             frameworks, and tools that enable me to develop reliable, efficient, and scalable applications.
                         </p>
                     </div>
-                    <div className="absolute inset-y-0 md:inset-y-9 w-full
-                    h-full inset-s-[50%] md:scale-125">
+                    <div className="relative mt-auto h-60 w-full md:absolute md:inset-y-9 md:inset-s-[50%] md:h-full md:scale-125">
                         <Frameworks />
                     </div>
                 </div>
