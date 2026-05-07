@@ -11,13 +11,12 @@ const About = () => {
             <h2 className="text-heading">About Me</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12 auto-rows-min">
                 {/* grid 1*/}
-                <div className="flex items-end grid-default-color grid-1">
+                <div className="flex flex-col grid-default-color grid-1 p-6 sm:p-8 relative min-h-\[450px\] md:min-h-full">
                     <img 
                     src="assets/coding-pov.png"
-                    className="absolute scale-[1.2] -right-10 -top-5 opacity-50 
-                    md:opacity-100 md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
+                    className="absolute scale-[1.75] -right-20 -top-10 md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-30 md:opacity-100"
                     />
-                    <div className="z-10">
+                    <div className="z-10 mt-auto">
                         <p className="headtext">Hi, I'm Jeshua Arias</p>
                         <p className="subtext">
                             I'm a software developer focused on building modern, scalable, and user-friendly applications. 
