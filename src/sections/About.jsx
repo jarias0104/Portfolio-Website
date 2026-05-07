@@ -9,12 +9,13 @@ const About = () => {
     return (
         <section id="about" className="c-space section-spacing">
             <h2 className="text-heading">About Me</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12 auto-rows-min">
+            <div className="flex flex-col gap-4 md:grid md:grid-cols-6 md:auto-rows-[18rem] mt-12">
                 {/* grid 1*/}
-                <div className="flex flex-col grid-default-color grid-1 p-6 sm:p-8 relative min-h-\[450px\] md:min-h-full">
+                <div className="flex flex-col grid-default-color grid-1 p-6 relative min-h-125 md:min-h-full md:items-end">
                     <img 
                     src="assets/coding-pov.png"
-                    className="absolute scale-[1.75] -right-20 -top-10 md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-30 md:opacity-100"
+                    className="absolute scale-[1.5] -right-10 -top-5 opacity-20 md:opacity-100
+                    md:scale-[3] md:left-50 md:inset-y-10"
                     />
                     <div className="z-10 mt-auto">
                         <p className="headtext">Hi, I'm Jeshua Arias</p>
@@ -102,20 +103,22 @@ const About = () => {
                     </div>
                 </div>
                 {/* grid 5*/}
-                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-\[400px\] md:min-h-full">
-                    <div className="z-10 md:w-[50%]">
+                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-112.5 md:min-h-full">
+                    <div className="z-20 relative"> {/* z-20 keeps text on top */}
                         <p className="headtext">Tech Stack</p>
                         <p className="subtext">I work with a diverse set of programming languages, 
                             frameworks, and tools that enable me to develop reliable, efficient, and scalable applications.
                         </p>
                     </div>
-                    <div className="absolute inset-y-0 md:inset-y-9 w-full
-                    h-full inset-s-[50%] md:scale-125">
+                    <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none mt-20 md:mt-0">
+                    <div className="scale-75 md:scale-125 opacity-60 md:opacity-100">
                         <Frameworks />
                     </div>
                 </div>
+                </div>
             </div>
         </section>
+        
     );
 }
 
