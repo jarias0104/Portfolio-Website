@@ -103,7 +103,8 @@ const About = () => {
                     </div>
                 </div>
                 {/* grid 5*/}
-                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-\[400px\] md:min-h-full">
+                <div className="flex flex-col grid-default-color grid-5 p-6 relative min-h-125 md:min-h-full md:items-end">
+                {/* <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-\[400px\] md:min-h-full"> */}
                     <div className="z-10 md:w-[50%]">
                         <p className="headtext">Tech Stack</p>
                         <p className="subtext">I work with a diverse set of programming languages, 
