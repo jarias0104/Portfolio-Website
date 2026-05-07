@@ -109,7 +109,8 @@ const About = () => {
                             frameworks, and tools that enable me to develop reliable, efficient, and scalable applications.
                         </p>
                     </div>
-                    <div className="relative mt-auto h-60 w-full md:absolute md:inset-y-9 md:inset-s-[50%] md:h-full md:scale-125">
+                    <div className="absolute inset-y-0 md:inset-y-9 w-full
+                    h-full inset-s-[50%] md:scale-125">
                         <Frameworks />
                     </div>
                 </div>
