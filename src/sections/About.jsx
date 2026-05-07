@@ -103,22 +103,20 @@ const About = () => {
                     </div>
                 </div>
                 {/* grid 5*/}
-                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-112.5 md:min-h-full">
-                    <div className="z-20 relative"> {/* z-20 keeps text on top */}
+                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-\[400px\] md:min-h-full">
+                    <div className="z-10 md:w-[50%]">
                         <p className="headtext">Tech Stack</p>
                         <p className="subtext">I work with a diverse set of programming languages, 
                             frameworks, and tools that enable me to develop reliable, efficient, and scalable applications.
                         </p>
                     </div>
-                    <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none mt-20 md:mt-0">
-                    <div className="scale-75 md:scale-125 opacity-60 md:opacity-100">
+                    <div className="absolute inset-y-0 md:inset-y-9 w-full
+                    h-full inset-s-[50%] md:scale-125">
                         <Frameworks />
                     </div>
                 </div>
-                </div>
             </div>
         </section>
-        
     );
 }
 
