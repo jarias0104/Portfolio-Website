@@ -100,23 +100,21 @@ const About = () => {
                             Do you want to start a project together?
                         </p>
                         <CopyEmailButton />
-                        
                     </div>
                 </div>
-                {/* grid 5 */}
-                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-\[500px\] md:min-h-full">
-                    {/* Text Block: Stays relative and pushes content down */}
-                    <div className="relative z-20 mb-8"> 
-                            <p className="headtext">Tech Stack</p>
-                            <p className="subtext">I work with a diverse set of programming languages, 
+                {/* grid 5*/}
+                <div className="grid-default-color grid-5 flex flex-col p-6 relative overflow-hidden min-h-112.5 md:min-h-full">
+                    <div className="z-20 relative"> {/* z-20 keeps text on top */}
+                        <p className="headtext">Tech Stack</p>
+                        <p className="subtext">I work with a diverse set of programming languages, 
                             frameworks, and tools that enable me to develop reliable, efficient, and scalable applications.
-                            </p>
+                        </p>
                     </div>
-                    <div className="flex-1 relative w-full flex items-center justify-center">
-                        <div className="scale-90 sm:scale-100 md:scale-125 md:absolute md:inset-0 md:flex md:items-center md:justify-center">
-                            <Frameworks />
-                        </div>
+                    <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none mt-20 md:mt-0">
+                    <div className="scale-75 md:scale-125 opacity-60 md:opacity-100">
+                        <Frameworks />
                     </div>
+                </div>
                 </div>
             </div>
         </section>
