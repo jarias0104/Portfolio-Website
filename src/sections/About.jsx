@@ -9,17 +9,13 @@ const About = () => {
     return (
         <section id="about" className="c-space section-spacing">
             <h2 className="text-heading">About Me</h2>
-            <div 
-            className="grid grid-cols-1 gap-4 md:grid-cols-6
-            md:auto-rows-[18rem] mt-12"
-            >
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12 auto-rows-min">
                 {/* grid 1*/}
                 <div className="flex items-end grid-default-color grid-1">
                     <img 
                     src="assets/coding-pov.png"
-                    className="absolute scale-[1.75] -right-20 -top-
-                    0[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-
-                    [2.5]"
+                    className="absolute scale-[1.2] -right-10 -top-5 opacity-50 
+                    md:opacity-100 md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
                     />
                     <div className="z-10">
                         <p className="headtext">Hi, I'm Jeshua Arias</p>
